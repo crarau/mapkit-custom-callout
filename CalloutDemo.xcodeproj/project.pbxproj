@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3780FB251486904F00CAA79B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3780FB241486904F00CAA79B /* UIKit.framework */; };
+		3780FB271486904F00CAA79B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3780FB261486904F00CAA79B /* Foundation.framework */; };
+		3780FB291486904F00CAA79B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3780FB281486904F00CAA79B /* CoreGraphics.framework */; };
+		3780FB2F1486904F00CAA79B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3780FB2D1486904F00CAA79B /* InfoPlist.strings */; };
+		3780FB311486904F00CAA79B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3780FB301486904F00CAA79B /* main.m */; };
+		3780FB351486904F00CAA79B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3780FB341486904F00CAA79B /* AppDelegate.m */; };
+		3780FB381486904F00CAA79B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3780FB371486904F00CAA79B /* ViewController.m */; };
+		3780FB3B1486904F00CAA79B /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3780FB391486904F00CAA79B /* ViewController.xib */; };
+		3780FB46148693D800CAA79B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3780FB44148693D800CAA79B /* CoreLocation.framework */; };
+		3780FB47148693D800CAA79B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3780FB45148693D800CAA79B /* MapKit.framework */; };
+		3780FB49148693FA00CAA79B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3780FB48148693FA00CAA79B /* QuartzCore.framework */; };
+		3780FB5F1486A1A700CAA79B /* NoteCallout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3780FB5E1486A1A700CAA79B /* NoteCallout.m */; };
+		3F76BF7A1B7D4CA300404422 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F76BF791B7D4CA300404422 /* Note.m */; };
+		3F76BF7D1B7D59B900404422 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F76BF7C1B7D59B900404422 /* Photo.m */; };
+		3F76BF801B7D5A1300404422 /* PhotoCallout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F76BF7F1B7D5A1300404422 /* PhotoCallout.m */; };
+		3F76BF841B7D5A9F00404422 /* PhotoCalloutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F76BF821B7D5A9F00404422 /* PhotoCalloutViewController.m */; };
+		3F76BF851B7D5A9F00404422 /* PhotoCalloutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F76BF831B7D5A9F00404422 /* PhotoCalloutViewController.xib */; };
+		3F76BF8D1B7D743400404422 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F76BF8C1B7D743400404422 /* Images.xcassets */; };
+		3F76BF921B7D7C3300404422 /* GenericPinAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F76BF911B7D7C3300404422 /* GenericPinAnnotationView.m */; };
+		3F76BF981B7D7C4700404422 /* CalloutAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F76BF941B7D7C4700404422 /* CalloutAnnotation.m */; };
+		3F76BF991B7D7C4700404422 /* CalloutAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F76BF971B7D7C4700404422 /* CalloutAnnotationView.m */; };
+		3F76BF9D1B7D7C5200404422 /* NoteCalloutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F76BF9B1B7D7C5200404422 /* NoteCalloutViewController.m */; };
+		3F76BF9E1B7D7C5200404422 /* NoteCalloutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F76BF9C1B7D7C5200404422 /* NoteCalloutViewController.xib */; };
+		3F76BFA11B7D7C6500404422 /* MapCallout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F76BFA01B7D7C6500404422 /* MapCallout.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3780FB201486904F00CAA79B /* CalloutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalloutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3780FB241486904F00CAA79B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3780FB261486904F00CAA79B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3780FB281486904F00CAA79B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3780FB2C1486904F00CAA79B /* CalloutDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CalloutDemo-Info.plist"; sourceTree = "<group>"; };
+		3780FB2E1486904F00CAA79B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3780FB301486904F00CAA79B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3780FB321486904F00CAA79B /* CalloutDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CalloutDemo-Prefix.pch"; sourceTree = "<group>"; };
+		3780FB331486904F00CAA79B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3780FB341486904F00CAA79B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3780FB361486904F00CAA79B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3780FB371486904F00CAA79B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3780FB3A1486904F00CAA79B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		3780FB44148693D800CAA79B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3780FB45148693D800CAA79B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3780FB48148693FA00CAA79B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3780FB5D1486A1A700CAA79B /* NoteCallout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteCallout.h; sourceTree = "<group>"; };
+		3780FB5E1486A1A700CAA79B /* NoteCallout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteCallout.m; sourceTree = "<group>"; };
+		3F76BF781B7D4CA300404422 /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		3F76BF791B7D4CA300404422 /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
+		3F76BF7B1B7D59B900404422 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		3F76BF7C1B7D59B900404422 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		3F76BF7E1B7D5A1300404422 /* PhotoCallout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCallout.h; sourceTree = "<group>"; };
+		3F76BF7F1B7D5A1300404422 /* PhotoCallout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCallout.m; sourceTree = "<group>"; };
+		3F76BF811B7D5A9F00404422 /* PhotoCalloutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCalloutViewController.h; sourceTree = "<group>"; };
+		3F76BF821B7D5A9F00404422 /* PhotoCalloutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCalloutViewController.m; sourceTree = "<group>"; };
+		3F76BF831B7D5A9F00404422 /* PhotoCalloutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoCalloutViewController.xib; sourceTree = "<group>"; };
+		3F76BF8C1B7D743400404422 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3F76BF901B7D7C3300404422 /* GenericPinAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GenericPinAnnotationView.h; path = CalloutDemo/GenericPinAnnotationView.h; sourceTree = SOURCE_ROOT; };
+		3F76BF911B7D7C3300404422 /* GenericPinAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GenericPinAnnotationView.m; path = CalloutDemo/GenericPinAnnotationView.m; sourceTree = SOURCE_ROOT; };
+		3F76BF931B7D7C4700404422 /* CalloutAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalloutAnnotation.h; path = CalloutDemo/CalloutAnnotation.h; sourceTree = SOURCE_ROOT; };
+		3F76BF941B7D7C4700404422 /* CalloutAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalloutAnnotation.m; path = CalloutDemo/CalloutAnnotation.m; sourceTree = SOURCE_ROOT; };
+		3F76BF951B7D7C4700404422 /* CalloutAnnotationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalloutAnnotationProtocol.h; path = CalloutDemo/CalloutAnnotationProtocol.h; sourceTree = SOURCE_ROOT; };
+		3F76BF961B7D7C4700404422 /* CalloutAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalloutAnnotationView.h; path = CalloutDemo/CalloutAnnotationView.h; sourceTree = SOURCE_ROOT; };
+		3F76BF971B7D7C4700404422 /* CalloutAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalloutAnnotationView.m; path = CalloutDemo/CalloutAnnotationView.m; sourceTree = SOURCE_ROOT; };
+		3F76BF9A1B7D7C5200404422 /* NoteCalloutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteCalloutViewController.h; sourceTree = "<group>"; };
+		3F76BF9B1B7D7C5200404422 /* NoteCalloutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteCalloutViewController.m; sourceTree = "<group>"; };
+		3F76BF9C1B7D7C5200404422 /* NoteCalloutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoteCalloutViewController.xib; sourceTree = "<group>"; };
+		3F76BF9F1B7D7C6500404422 /* MapCallout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapCallout.h; path = CalloutDemo/MapCallout.h; sourceTree = SOURCE_ROOT; };
+		3F76BFA01B7D7C6500404422 /* MapCallout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapCallout.m; path = CalloutDemo/MapCallout.m; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3780FB1D1486904F00CAA79B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3780FB49148693FA00CAA79B /* QuartzCore.framework in Frameworks */,
+				3780FB46148693D800CAA79B /* CoreLocation.framework in Frameworks */,
+				3780FB47148693D800CAA79B /* MapKit.framework in Frameworks */,
+				3780FB251486904F00CAA79B /* UIKit.framework in Frameworks */,
+				3780FB271486904F00CAA79B /* Foundation.framework in Frameworks */,
+				3780FB291486904F00CAA79B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3770F11A1486DD2E00FD854B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		3780FB151486904F00CAA79B = {
+			isa = PBXGroup;
+			children = (
+				3780FB4A148694A500CAA79B /* MapKitCallout */,
+				3780FB2A1486904F00CAA79B /* CalloutDemo */,
+				3780FB231486904F00CAA79B /* Frameworks */,
+				3780FB211486904F00CAA79B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3780FB211486904F00CAA79B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3780FB201486904F00CAA79B /* CalloutDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3780FB231486904F00CAA79B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3780FB48148693FA00CAA79B /* QuartzCore.framework */,
+				3780FB44148693D800CAA79B /* CoreLocation.framework */,
+				3780FB45148693D800CAA79B /* MapKit.framework */,
+				3780FB241486904F00CAA79B /* UIKit.framework */,
+				3780FB261486904F00CAA79B /* Foundation.framework */,
+				3780FB281486904F00CAA79B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3780FB2A1486904F00CAA79B /* CalloutDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3780FB331486904F00CAA79B /* AppDelegate.h */,
+				3780FB341486904F00CAA79B /* AppDelegate.m */,
+				3780FB361486904F00CAA79B /* ViewController.h */,
+				3780FB371486904F00CAA79B /* ViewController.m */,
+				3F76BF8E1B7D775400404422 /* Photo */,
+				3F76BF8F1B7D775D00404422 /* Note */,
+				3780FB391486904F00CAA79B /* ViewController.xib */,
+				3770F11A1486DD2E00FD854B /* Assets */,
+				3F76BF8C1B7D743400404422 /* Images.xcassets */,
+				3780FB2B1486904F00CAA79B /* Supporting Files */,
+			);
+			path = CalloutDemo;
+			sourceTree = "<group>";
+		};
+		3780FB2B1486904F00CAA79B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3780FB2C1486904F00CAA79B /* CalloutDemo-Info.plist */,
+				3780FB2D1486904F00CAA79B /* InfoPlist.strings */,
+				3780FB301486904F00CAA79B /* main.m */,
+				3780FB321486904F00CAA79B /* CalloutDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3780FB4A148694A500CAA79B /* MapKitCallout */ = {
+			isa = PBXGroup;
+			children = (
+				3F76BF901B7D7C3300404422 /* GenericPinAnnotationView.h */,
+				3F76BF911B7D7C3300404422 /* GenericPinAnnotationView.m */,
+				3F76BF931B7D7C4700404422 /* CalloutAnnotation.h */,
+				3F76BF941B7D7C4700404422 /* CalloutAnnotation.m */,
+				3F76BF951B7D7C4700404422 /* CalloutAnnotationProtocol.h */,
+				3F76BF961B7D7C4700404422 /* CalloutAnnotationView.h */,
+				3F76BF971B7D7C4700404422 /* CalloutAnnotationView.m */,
+				3F76BF9F1B7D7C6500404422 /* MapCallout.h */,
+				3F76BFA01B7D7C6500404422 /* MapCallout.m */,
+			);
+			name = MapKitCallout;
+			path = ../MultiRowCalloutAnnotationView;
+			sourceTree = "<group>";
+		};
+		3F76BF8E1B7D775400404422 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				3F76BF7B1B7D59B900404422 /* Photo.h */,
+				3F76BF7C1B7D59B900404422 /* Photo.m */,
+				3F76BF7E1B7D5A1300404422 /* PhotoCallout.h */,
+				3F76BF7F1B7D5A1300404422 /* PhotoCallout.m */,
+				3F76BF811B7D5A9F00404422 /* PhotoCalloutViewController.h */,
+				3F76BF821B7D5A9F00404422 /* PhotoCalloutViewController.m */,
+				3F76BF831B7D5A9F00404422 /* PhotoCalloutViewController.xib */,
+			);
+			name = Photo;
+			sourceTree = "<group>";
+		};
+		3F76BF8F1B7D775D00404422 /* Note */ = {
+			isa = PBXGroup;
+			children = (
+				3F76BF781B7D4CA300404422 /* Note.h */,
+				3F76BF791B7D4CA300404422 /* Note.m */,
+				3780FB5D1486A1A700CAA79B /* NoteCallout.h */,
+				3780FB5E1486A1A700CAA79B /* NoteCallout.m */,
+				3F76BF9A1B7D7C5200404422 /* NoteCalloutViewController.h */,
+				3F76BF9B1B7D7C5200404422 /* NoteCalloutViewController.m */,
+				3F76BF9C1B7D7C5200404422 /* NoteCalloutViewController.xib */,
+			);
+			name = Note;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3780FB1F1486904F00CAA79B /* CalloutDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3780FB411486904F00CAA79B /* Build configuration list for PBXNativeTarget "CalloutDemo" */;
+			buildPhases = (
+				3780FB1C1486904F00CAA79B /* Sources */,
+				3780FB1D1486904F00CAA79B /* Frameworks */,
+				3780FB1E1486904F00CAA79B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CalloutDemo;
+			productName = CalloutDemo;
+			productReference = 3780FB201486904F00CAA79B /* CalloutDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3780FB171486904F00CAA79B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+			};
+			buildConfigurationList = 3780FB1A1486904F00CAA79B /* Build configuration list for PBXProject "CalloutDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3780FB151486904F00CAA79B;
+			productRefGroup = 3780FB211486904F00CAA79B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3780FB1F1486904F00CAA79B /* CalloutDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3780FB1E1486904F00CAA79B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F76BF851B7D5A9F00404422 /* PhotoCalloutViewController.xib in Resources */,
+				3780FB2F1486904F00CAA79B /* InfoPlist.strings in Resources */,
+				3F76BF9E1B7D7C5200404422 /* NoteCalloutViewController.xib in Resources */,
+				3780FB3B1486904F00CAA79B /* ViewController.xib in Resources */,
+				3F76BF8D1B7D743400404422 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3780FB1C1486904F00CAA79B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F76BF991B7D7C4700404422 /* CalloutAnnotationView.m in Sources */,
+				3780FB311486904F00CAA79B /* main.m in Sources */,
+				3F76BF7A1B7D4CA300404422 /* Note.m in Sources */,
+				3780FB351486904F00CAA79B /* AppDelegate.m in Sources */,
+				3F76BF801B7D5A1300404422 /* PhotoCallout.m in Sources */,
+				3F76BF9D1B7D7C5200404422 /* NoteCalloutViewController.m in Sources */,
+				3780FB381486904F00CAA79B /* ViewController.m in Sources */,
+				3F76BF841B7D5A9F00404422 /* PhotoCalloutViewController.m in Sources */,
+				3F76BF921B7D7C3300404422 /* GenericPinAnnotationView.m in Sources */,
+				3F76BF981B7D7C4700404422 /* CalloutAnnotation.m in Sources */,
+				3F76BF7D1B7D59B900404422 /* Photo.m in Sources */,
+				3780FB5F1486A1A700CAA79B /* NoteCallout.m in Sources */,
+				3F76BFA11B7D7C6500404422 /* MapCallout.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3780FB2D1486904F00CAA79B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3780FB2E1486904F00CAA79B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3780FB391486904F00CAA79B /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3780FB3A1486904F00CAA79B /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3780FB3F1486904F00CAA79B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3780FB401486904F00CAA79B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3780FB421486904F00CAA79B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CalloutDemo/CalloutDemo-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = "CalloutDemo/CalloutDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3780FB431486904F00CAA79B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CalloutDemo/CalloutDemo-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = "CalloutDemo/CalloutDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3780FB1A1486904F00CAA79B /* Build configuration list for PBXProject "CalloutDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3780FB3F1486904F00CAA79B /* Debug */,
+				3780FB401486904F00CAA79B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3780FB411486904F00CAA79B /* Build configuration list for PBXNativeTarget "CalloutDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3780FB421486904F00CAA79B /* Debug */,
+				3780FB431486904F00CAA79B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3780FB171486904F00CAA79B /* Project object */;
+}
