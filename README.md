@@ -15,18 +15,11 @@ Attributions and Thanks
 =============
 
 The project was started from:
-[GitHub](https://github.com/grgcombs/MultiRowCalloutAnnotationView).
+[MultiRowCalloutAnnotationView](https://github.com/grgcombs/MultiRowCalloutAnnotationView).
 
 which in turn was based on James Rantanen's work at Asynchrony Solutions
 - http://blog.asolutions.com/2010/09/building-custom-map-annotation-callouts-part-1/
 - http://blog.asolutions.com/2010/09/building-custom-map-annotation-callouts-part-2/
- 
-License
-=========================
-
-[Under a Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/)
-
-![Creative Commons License Badge](http://i.creativecommons.org/l/by/3.0/88x31.png "Creative Commons Attribution")
 
 Screenshots
 =========================
